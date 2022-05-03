@@ -12,26 +12,25 @@
                 background-color: transparent;
             }
             .player-style {
-                box-shadow: 2px 2px 2px 1px grey;
-                
+                box-shadow: 10px 5px 5px grey;
+                display: flex;
+                flex-direction: column;
+                flex-basis: 20px;
+                width: 800px;
+                height: 600px;
             }
             .player-control {
                 background: black;
             }
-            .player-size {
-                width: 800px;
-                height: 600px;
-            }
             .video-container-size {
-                width: 100%;
-                height: 100%;
+                flex-grow: 1;
             }
         </style>
     </head>
     <body>
-        <div id="player" class="player-style player-size">
+        <div id="player" class="player-style">
             <div class="js-video-container video-container-size"></div>
-            <div class="player-control player-style">
+            <div class="player-control">
                 <button class="js-play-button play-contorls"><i class="fa fa-play" aria-hidden="true"></i></button>
                 <button class="js-pause-button play-contorls" hidden><i class="fa fa-pause " aria-hidden="true"></i></button>
                 <!--<button class="js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
