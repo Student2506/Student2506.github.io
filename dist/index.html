@@ -5,32 +5,47 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="font-awesome.min.css">
         <style>
-            .play_contorls {
+            .play-contorls {
                 border-style: none;
                 cursor: pointer;
                 color:white;
                 background-color: transparent;
             }
+            .player-style {
+                box-shadow: 2px 2px 2px 1px grey;
+                
+            }
+            .player-control {
+                background: black;
+            }
+            .player-size {
+                width: 800px;
+                height: 600px;
+            }
+            .video-container-size {
+                width: 100%;
+                height: 100%;
+            }
         </style>
     </head>
     <body>
-        <div id="player" style="width: 800px; height: 600px;">
-            <div class="js-video-container" style="width: 100%; height: 100%"></div>
-            <div style="background: black;">
-                <button class="js-play-button play_contorls"><i class="fa fa-play" aria-hidden="true"></i></button>
-                <button class="js-pause-button play_contorls" hidden><i class="fa fa-pause " aria-hidden="true"></i></button>
-                <button class="js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+        <div id="player" class="player-style player-size">
+            <div class="js-video-container video-container-size"></div>
+            <div class="player-control player-style">
+                <button class="js-play-button play-contorls"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button class="js-pause-button play-contorls" hidden><i class="fa fa-pause " aria-hidden="true"></i></button>
+                <!--<button class="js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
                 <button class="js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-                <button class="js-fullscreen-button">Fullscreen</button>
+                <button class="js-fullscreen-button">Fullscreen</button> -->
             </div>
-            <div styles="color: white;">
+            <!-- <div styles="color: white;">
                 <span class="js-current-time"></span>
                 -
                 <span class="js-duration"></span>
             </div>
             <div class="js-progress" style="background-color: grey;">
                 <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
-            </div>
+            </div> -->
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
