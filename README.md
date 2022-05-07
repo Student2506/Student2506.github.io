@@ -3,6 +3,6 @@
 Данный сайт представляет из себя статическую страницу с видеоплеером
 
 
- ![Site example](/screenshot.png)
- Сайт размещён [здесь](https://student2506.github.io/)
+ ![Site example](/screenshot.png)  
+ Сайт размещён [здесь](https://student2506.github.io/)  
  Плеер позаимствован [отсюда](https://github.com/devmanorg/video-player-jslib)
