@@ -130,3 +130,4 @@ dmypy.json
 .vscode/
 
 !favicon.jpg
+search_index.html
