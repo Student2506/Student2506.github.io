@@ -11,7 +11,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .player-style {
+.player-style {
     box-shadow: 0 0 5px 5px grey;
     display: flex;
     flex-direction: column;
@@ -19,24 +19,39 @@
     width: 800px;
     height: 600px;
   }
-    .player-control {
+.player-control {
     background: black;
     display: flex;
   }
-  .video-container-size {
+.video-container-size {
     flex-grow: 1;
   }
-  .fa {
+.fa {
     height: 40px;
     line-height: 40px;
     font-size: 1.1em;
     margin-top: -7px;
     margin-bottom: 10px;
   }
-  .play-contorls-elements {
+.play-contorls-elements {
     height: 36px;
     width: 36px;
   }
-  .fa-expand {
+.fa-expand {
     margin-right: 0;
   }
+.viewing-panel {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 999;
+    align-items: center;
+    margin-bottom: 7px
+}
+.js-current-time, .js-duration {
+    flex-grow: 1;
+}
+.viewing-progressbar {
+    flex-grow: 999;
+}

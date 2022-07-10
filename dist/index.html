@@ -10,20 +10,36 @@
     <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
     <link rel="manifest" href="static/img/site.webmanifest">
     <link rel="mask-icon" href="static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div id="player" class="player-style">
       <div class="js-video-container video-container-size"></div>
+      
       <div class="player-control">
-        <button class="js-play-button play-contorls-elements"><i class="fa fa-play" aria-hidden="true"></i></button>
-        <button class="js-pause-button play-contorls-elements" hidden><i class="fa fa-pause " aria-hidden="true"></i></button>
-        <button class="js-volume-button play-contorls-elements"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-        <button class="js-mute-button play-contorls-elements" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-        <div class="video-container-size"></div>
-        <button class="js-fullscreen-button play-contorls-elements"><i class="fa fa-expand" aria-hidden="true"></i></button>
+        <div class="left-buttons">
+          <button class="js-play-button play-contorls-elements"><i class="fa fa-play" aria-hidden="true"></i></button>
+          <button class="js-pause-button play-contorls-elements" hidden><i class="fa fa-pause " aria-hidden="true"></i></button>
+          <button class="js-volume-button play-contorls-elements"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+          <button class="js-mute-button play-contorls-elements" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+        </div>
+        <div class="viewing-panel">
+          <div class="js-current-time"></div>
+          <div class="viewing-progressbar"></div>
+          <div class="js-duration"></div>
+        </div>
+        <!-- <div class="video-container-size"></div> -->
+        <div class="right-buttons">
+          <button class="js-fullscreen-button play-contorls-elements">
+            <i class="fa fa-expand" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
+      
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
