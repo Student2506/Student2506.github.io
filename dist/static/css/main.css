@@ -1,4 +1,8 @@
-  .play-contorls-elements {
+* {
+    box-sizing: border-box;
+}
+
+.play-contorls-elements {
     border-style: none;
     cursor: pointer;
     color:white;
@@ -8,7 +12,7 @@
     padding-right: 10px;
   }
   .player-style {
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 0 0 5px 5px grey;
     display: flex;
     flex-direction: column;
     flex-basis: 20px;
@@ -23,10 +27,16 @@
     flex-grow: 1;
   }
   .fa {
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.1em;
+    margin-top: -7px;
+    margin-bottom: 10px;
   }
   .play-contorls-elements {
-    height: 30px;
+    height: 36px;
     width: 36px;
+  }
+  .fa-expand {
+    margin-right: 0;
   }
